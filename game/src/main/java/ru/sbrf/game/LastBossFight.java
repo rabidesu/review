@@ -48,6 +48,7 @@ public class LastBossFight {
         }
     }
 
+    @Transactional
     private void killOrcs(ArrayList<Player> players) {
         for (Player player : players) {
             if (player.getRace().equals(Race.ORK)) {
